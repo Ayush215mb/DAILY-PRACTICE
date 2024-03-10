@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <div>
+        <h2>Form for our trip</h2>
+        <form action="form.php">
+            <input type="text" placeholder="Enter Your Name"><br><br>
+            <label for="SectionidA">
+                <input type="radio" value="Section A" name="Section" id="SectionidA">Section A
+                <!--id ek unique identifier hota h,,har input ek alg id hoga-->
+            </label><br>
+            <label for="SectionidB">
+                <input type="radio" value="Section B" name="Section" id="SectionidB">Section B
+            </label><br>
+            <label for="SectionidC">
+                <input type="radio" value="Section C" name="Section" id="SectionidC">Section C
+            </label>
+            <br><br>
+
+            <label
+                for="foodCanteen"><!--yha pe jo for ="" likh rhe h wo aur id same hoga tab agr hum web page pe text pe bhi click krenge to wo mark ho jayega-->
+                <input type="checkbox" name="Canteen" id="foodCanteen">Want Food canteen card
+            </label><br><br>
+            <!--textarea is another kind of user input method in forms-->
+            <textarea name="Explain" id="Explain" rows="10" cols="30"
+                placeholder="Explain Why you want to join"></textarea>
+
+            <!--select is another kind of user input method in forms-->
+            <select name="Car" id="Car">
+                <option value="No-car">Select Your Car</option>
+                <option value="red car">red car</option>
+                <option value="blue Car">blue Car</option>
+                <option value="black Car">black Car</option>
+                <option value="electric Car">electric Car</option>
+
+            </select>
+
+        </form>
+    </div>
+</body>
+
+</html>
