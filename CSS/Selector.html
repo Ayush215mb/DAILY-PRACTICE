@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS practice site</title>
+    
+  <style>
+    /*
+There are three type of selection
+    1.element selector
+    2.class selector
+    3.id selector
+
+*/
+/*This is element selector but it will chnge all the div element so don't use it*/
+div {
+    background-color: blue;
+    color: white;
+}
+
+/*This is class selector, it will change things which are of same class(classes are not unique, same class can be assigned to diff elements)*/
+.red {
+    background-color: red;
+    color: white;
+}
+
+/*This is id selector, it will change things which are of that id(Id are unique,only 1 element can have 1 id)*/
+#green {
+    background-color: aqua;
+    color: black;
+}
+
+/*This is child selector, it will change things if it is direct child)*/
+div.red>span {
+    color: white;
+    background: black;
+}
+
+/*This is child selector, it will change things if it is direct child)*/
+div.red>p {
+    color: yellow;
+    background: green;
+}
+
+/* Descendant Selector  */
+div p {
+    color: black;
+    background-color: cornflowerblue;
+}
+
+/* Universal Selector */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Pseudo Selector  */
+a:visited {
+    color: yellow
+}
+
+a:link {
+    color: green;
+}
+
+a:active {
+    background-color: red;
+}
+
+a:hover {
+    background-color: yellow;
+}
+
+
+p:first-child {
+    background-color: aqua;
+}
+  </style>
+</head>
+
+<body>
+    <header>
+        <h2 class="heading">CSS practice</h2>
+    </header>
+
+    <main>
+        <div>
+            <p>hello how r u?</p>
+        </div>
+        <div class="red">
+            <span>This is span,it's bg color will be black
+                <p>this is paragraph, i'm child of span and grandchild of div.red so the child selector will not work on
+                    me</p>
+            </span>
+            <p>Im paragraph inside div with class red</p>
+        </div>
+
+        <div id="green">
+            <p>Im div with id= green</p>
+        </div>
+
+    </main>
+    <footer>
+        <a href="https://www.google.com" target="_blank">Go to Google</a>
+        <a href="https://www.facebook.com" target="_blank">Go to Facebook</a>
+        <script src="script.js"></script>
+    </footer>
+</body>
+
+</html>
