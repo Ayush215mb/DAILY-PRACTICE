@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            
+        }
+
+        .box {
+            border: 3px solid red;
+            display: inline;
+            /*will make block elements as inline but when you will add padding or margin it will not work from the top as it is inline*/
+            padding: 30px;
+            margin: 10px;
+            /* display: none; isse ye class ni dikhega aur wo space bhi hatt jayega*/
+            /* visibility: hidden; isse ye class ni dikhega par wo space khali reh jayega*/
+        }
+
+        .box1 {
+            border: 2px solid blue;
+            display: inline-block;
+            padding: 30px;
+            margin: 10px;
+        }
+
+        body>div {
+            display: inline-block;
+        }
+
+        /* we will use flec for 80-90% of the time*/
+        .pan {
+            display: flex;
+            border: 2px solid black;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!--how to chnage the block elements to inline elements-->
+
+    <div>
+        <p class="box">I am a box<!--block element--></p>
+        <p class="box1">I am another box</p>
+    </div>
+    <span class="pan">I am<!--inline element--></span>
+    <span class="pan">span</span>
+
+</body>
+
+</html>
