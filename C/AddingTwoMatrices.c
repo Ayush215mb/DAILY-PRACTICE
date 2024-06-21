@@ -48,7 +48,7 @@ int main()
     {
         for(int j=0;j<col1;j++)
         {
-            printf("\n%d ,",sum[i][j]);
+            printf("%d ,",sum[i][j]);
         }
         printf("\n");
     }
